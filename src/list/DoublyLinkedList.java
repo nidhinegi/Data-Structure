@@ -153,6 +153,8 @@ public class DoublyLinkedList {
             Node node=head.next;
             if(node!=null){
                 node.previous=null;
+            }else {
+                tail=null;
             }
             head=node;
             decrementSize();
